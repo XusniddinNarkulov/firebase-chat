@@ -21,7 +21,6 @@ function App() {
       <BrowserRouter>
          <Navbar />
          <AppRouter />
-         <Loader />
       </BrowserRouter>
    );
 }
