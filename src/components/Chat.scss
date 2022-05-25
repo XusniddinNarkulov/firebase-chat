@@ -128,7 +128,7 @@ body {
 .messages {
    flex: 1 1 auto;
    color: rgba(255, 255, 255, 0.5);
-   overflow: hidden;
+   overflow-y: scroll;
    position: relative;
    width: 100%;
    padding: 1%;

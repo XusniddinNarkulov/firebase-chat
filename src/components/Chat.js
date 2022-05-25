@@ -31,15 +31,14 @@ export default function Chat() {
       return <Loader />;
    }
 
-   messages.map((val, key) => {});
    return (
       <div>
          <div className="chat">
             <div className="chat-title">
-               <h1>Fabio Ottaviani</h1>
-               <h2>Supah</h2>
+               <h1>{user.displayName}</h1>
+               <h2>{user.email}</h2>
                <figure className="avatar">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/156381/profile/profile-80.jpg" />
+                  <img src={user.photoURL} />
                </figure>
             </div>
             <div className="messages">
