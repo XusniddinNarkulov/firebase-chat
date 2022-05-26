@@ -10,6 +10,7 @@ import { Context } from "..";
 export default function AppRouter() {
    // const user = false;
    const { auth } = useContext(Context);
+   console.log(useContext(Context));
    const [user] = useAuthState(auth);
 
    console.log(user);

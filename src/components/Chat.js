@@ -43,10 +43,10 @@ export default function Chat() {
             </div>
             <div className="messages">
                <div className="messages-content"></div>
-               {messages.map((val) => {
+               {messages.map((val, key) => {
                   if (user.uid !== val.uid) {
                      return (
-                        <div className="message new">
+                        <div key={key} className="message new">
                            <figure className="avatar">
                               <img src={val.photoURL} />
                            </figure>
